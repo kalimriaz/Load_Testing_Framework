@@ -1,6 +1,6 @@
-# K6 Electron GUI (Minimal)
+# Load_Testing_Framework (K6 Electron GUI)
 
-This repository contains a minimal Electron-based GUI that can run a TypeScript k6 script (simple GET request) with a configurable number of VUs. It's intended as a basic example/framework to get started.
+This repository contains a minimal Electron-based GUI that can run a TypeScript k6 script (simple GET request) with a configurable number of VUs. It's intended as a basic example/framework to get started. This README merges content from the original repository and the GUI example added in the `add-electron-k6-gui` branch.
 
 Prerequisites
 - Node.js (18+ recommended)
@@ -30,9 +30,3 @@ Usage
 
 Limitations
 - This is a minimal example focusing on a simple GET test. It doesn't include advanced test scenarios, result persistence, or charts. To extend: add CSV export, WebSocket handling, xk6-browser for browser-driven scenarios, or more k6 options.
-
-Usage
-- Enter a target URL and VUs in the GUI (defaults to 10 VUs). Click "Start Test" to run k6. The GUI will spawn k6 and stream stdout/stderr.
-
-Notes
-- This is intentionally minimal. It expects `k6` to be available on the system PATH. The k6 script is a TypeScript file compiled/bundled into `dist/test.bundle.js` for clarity.
